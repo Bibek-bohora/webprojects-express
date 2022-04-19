@@ -5,18 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+      {{>alllink}}
+
+      
+    <style>
+
+        .accordion1{
+          height: 100vh;
+           background: #212529;
+        }
+    </style>
 </head>
-<body>
+<body class="accordion1">
 
     {{>Navbar}}
-    <ul>
-
-        <li>home</li>
-        <li>about</li>
-        <li>contact</li>
-        <li>{{status}}</li>
-    </ul>
-
+   <div class="card" style="width: 18rem;">
+  <img src="./b.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
 
     {{>Fotter}}
 </body>

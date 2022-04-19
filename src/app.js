@@ -3,6 +3,8 @@ const app= express();
 const path=require("path")
 const hbs=require("hbs")
 
+const port =process.env.PORT || 8000;
+
 
 // const staticspath= path.join(__dirname,"../views")
 // console.log(staticspath)
@@ -41,6 +43,6 @@ app.get("/contacts",(req,res)=>{
 })
 
 
-app.listen(8000,()=>{
+app.listen(port,()=>{
     console.log("connections success")
 })
